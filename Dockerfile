@@ -1,6 +1,6 @@
 # usage:
 # while read url; do docker run -t wfnintr/secretfinder -i $url -o cli | tee -a js_results.txt;done < urls.txt
-from python:alpine
+from python:3.12.1-alpine3.19
 LABEL source="SecretFinder <github.com/m4ll0k/SecretFinder>"
 LABEL maintainer="wfnintr@null.net"
 RUN apk update && \
